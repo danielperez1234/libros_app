@@ -1,0 +1,6 @@
+.arrayThree{
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: flex;
+
+}

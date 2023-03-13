@@ -1,0 +1,19 @@
+.carouselTitles{
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+}
+.myModal .body{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.myModal .body img{
+  width: 50%;
+  border-radius: 10%;
+  object-fit: cover;
+}

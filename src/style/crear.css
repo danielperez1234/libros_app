@@ -1,0 +1,38 @@
+.crearBody{
+  display: flex;
+  flex-direction: column;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  justify-content: center;
+  align-items: center;
+}
+.crearBody Form{
+  width: 50vw;
+}
+.crearBody Form .formButton{
+  display: flex;
+  padding-top: 5vh;
+  justify-content: center;
+  align-self: center;
+}
+.crearBody Form .formButton Button{
+  background-color: black;
+  border-color: gray;
+  color: aliceblue;
+  font-size: 20px;
+  letter-spacing: 10PX;
+}
+.crearBody Form Label{
+  letter-spacing: 15px;
+}
+.crearBody .myForm .group{
+  padding-top: 20px !important;
+}
+.crearTitle{
+  
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 20px;
+  padding-top: 2.5vh;
+  padding-bottom:5vh ;
+}
