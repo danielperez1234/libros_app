@@ -11,7 +11,7 @@ function Create() {
     gender: "",
     serie: "",
     year: 2000,
-    image: ""
+    image: "https://i.pinimg.com/736x/f1/cc/99/f1cc995f8f00b7fd27dda10c9e297071--childrens-books-kid-books.jpg"
   });
   const handleSubmit = (event:React.FormEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -109,7 +109,7 @@ function Create() {
           </Form.Group>
 
           <div className="formButton">
-            <Button variant="primary" type="submit" onSubmit={handleSubmit}>
+            <Button variant="primary"  type="submit" onSubmit={handleSubmit}>
               ENVIAR
             </Button>
           </div>

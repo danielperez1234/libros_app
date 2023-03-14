@@ -10,7 +10,7 @@ function NavApp() {
         <NavLink to="/" className="nav-btn">Inicio</NavLink>
       </li>
       <li>
-        <NavLink to="/" className="nav-btn">Perfil</NavLink>
+        <NavLink to="/perfil" className="nav-btn">Perfil</NavLink>
       </li>
       <li>
         <NavLink to="/book/create" className="nav-btn">Crear</NavLink>

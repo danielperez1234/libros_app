@@ -4,6 +4,7 @@ import './App.css'
 import Libro from './views/libro';
 import Create from './views/crear';
 import SearchBook from './views/search_book';
+import Perfil from './views/perfil';
 
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
           <Route path="/book/:libroId" element={<Libro />} />
           <Route path='/book/create' element={<Create/>}/>
           <Route path='/book/search' element={<SearchBook/>}/>
-       </Routes>
+          <Route path='/perfil' element={<Perfil/>}/>
+      </Routes>
     </>
  );
 };

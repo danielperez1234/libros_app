@@ -5,7 +5,7 @@ import BookElement from "../widgets/book_elemnt";
 import CarouselApp from "../widgets/carousel_app";
 import Book from "../models/book";
 import CarouselTitles from "../widgets/carousel_titles";
-let bk = new Book(1,"Harry Potter","JK",2000,"","","https://d827xgdhgqbnd.cloudfront.net/wp-content/uploads/2016/04/09121712/book-cover-placeholder.png");
+let bk = new Book(1,"Harry Potter","JK",2000,"","","https://i.pinimg.com/736x/f1/cc/99/f1cc995f8f00b7fd27dda10c9e297071--childrens-books-kid-books.jpg");
 function Home() {
   return (
     <div className="App">
