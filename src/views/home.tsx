@@ -55,7 +55,32 @@ function Home() {
       axios.get("https://api-libros-node.azurewebsites.net/api/series").then(
         function (series){
           console.log(series.data)
-          
+          const index = Math.floor(Math.random() * series.data.length);
+          var x1 = series.data[index];
+          axios.get(`https://api-libros-node.azurewebsites.net/api/libros/serie/${x1.id_serie}`).then(
+            function(librosBySerie){
+              console.log(librosBySerie.data)
+              var tempArray = [<div></div>];
+              (librosBySerie.data as any[]).forEach((libroBySerie: { id_libro: number; titulo: string; autor: string; anio: number; genero: string; serie: string | undefined; imagen: string | undefined; })=>{
+                tempArray.push(
+                  <BookElement book={new Book(
+                    libroBySerie.id_libro,
+                    libroBySerie.titulo,
+                    libroBySerie.autor,
+                    libroBySerie.anio,
+                    libroBySerie.genero,
+                    libroBySerie.serie,
+                    libroBySerie.imagen
+                  )}></BookElement>
+                )
+              })
+              setSerie(<div className="titulo-Serie">
+                <h2>{librosBySerie.data[0].serie}</h2>
+                <CarouselApp>
+                {tempArray}
+              </CarouselApp></div>)
+            }
+          )
         }
       )
   }, []);
